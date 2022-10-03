@@ -108,7 +108,6 @@ extension PopMenuManager {
     /// Get top view controller in window.
     fileprivate class func getTopViewControllerInWindow() -> UIViewController? {
         guard let window = UIApplication.shared.keyWindow else { return nil }
-        
         return topViewControllerWithRootViewController(rootViewController: window.rootViewController)
     }
     
